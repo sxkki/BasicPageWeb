@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario-DEV</title>
+    <link rel="icon" href="./img/diseno-web.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+            <ul class="menu">
+                <li><a href="index.html"><i class="fas fa-archway"></i> Home </a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contactame</a></li>
+                <li><a href="calc.html"><i class="fas fa-calculator"></i> Calculadora</i></a></li>
+                <li class="active"><a href="form.html"><i class="fas fa-angle-left"></i> <i class="fas fa-clipboard-list"></i> Formulario <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="fee.html"><i class="fas fa-coins"></i> Comisiones</a></li>
+            </ul>
+        </div>
+    </header>
+    <form name="fvalida">
+        <table class="validacion">
+            <tr>
+                <td>Nombre: </td>
+                <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td>Edad: </td>
+                <td><input type="text" name="edad" size="3" maxlength="2"></td>
+            </tr>
+            <tr>
+                <td>Correo: </td>
+                <td><input type="text" name="correo" size="25" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td>Interés:</td>
+                <td>
+                    <select name="interes">
+                        <option value="Elegir">Elegir</option>
+                        <option value="Comercial">Contacto comercial</option>
+                        <option value="Clientees">Atención al cliente</option>
+                        <option value="Proveedores">Contacto de proveedores</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+</body>
+</html>
